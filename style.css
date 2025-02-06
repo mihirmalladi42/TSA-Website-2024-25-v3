@@ -1,0 +1,121 @@
+
+  .q {
+    font-family: oswald;
+    text-align: center;
+    font-size: 40px;
+  }
+  .contact-index {
+    color: black;
+    font-family: century-gothic;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+  }
+  .contact-info {
+    display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.newest-releases-h1 {
+  color: #f44f4c;
+  font-family: oswald;
+  font-size: 40px;
+  margin-left: 50px;
+  text-align: left;
+}
+.newest-releases {
+  list-style-type: square;
+  font-family: century-gothic;
+  font-size: 30px;
+  margin-left: 50px;
+}
+.check-these-out {
+  font-family: century-gothic;
+  font-size: 30px;
+  margin-left: 50px;
+  text-align: left;
+}
+.call-us {
+  font-family: century-gothic;
+  font-size: 16px;
+  margin-left: 50px;
+  text-align: left;
+}
+.order-delivery {
+  background-color: #f44f4c;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-family: oswald;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 24px;
+  transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+.order-delivery:hover {
+  transform: scale(1.1);
+  background-color: #ce4543;
+  cursor: pointer;
+}
+.container-mainpage {
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.questions-h1 {
+  font-family: oswald;
+  font-size: 60px;
+  text-align: left;
+}
+.contact-font {
+  font-family: "open sans";
+  font-size: 20px;
+}
+.you-can-find {
+  font-family: "open sans";
+  font-size: 20px;
+  text-align: left;
+}
+.locations {
+  font-family: century-gothic;
+  font-size: 18px;
+  text-align: left;
+  font-style: italic;
+}
+.mar-right {
+  margin-right: 50px;
+}
+.email-css {
+  font-family: century-gothic;
+  font-size: 20px;
+}
+.new-release-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px;
+  width: 200px;
+}
+.new-release-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 5px rgb(216, 216, 216);
+}
+.new-release-item-li {
+  list-style-type: square;
+  font-family: century-gothic;
+  transition: transform 0.2s ease-in-out;
+}
+.new-release-item-li:hover {
+  transform: scale(1.05);
+}/*
+.new-release-item-li img{
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px;
+  width: 200px;
+}*/
+.new-release-item-li:hover img{
+  transform: scale(1.05);
+  box-shadow: 0 0 0 5px rgb(216, 216, 216);
+}

@@ -1,0 +1,72 @@
+.cardOrder {
+  display: flex;
+  align-items: center;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cardOrder:hover {
+    background-color: rgb(240, 240, 240);
+    transform: scale(1.01);
+}
+.confirm {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.confirm:hover {
+  border-image: 2px solid black;
+  background-color: rgb(240, 240, 240);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.foodHeading {
+    font-family: oswald;
+    font-size: 65px;
+  }
+  .foodDescription {
+    font-family: bitter;
+    font-size: 20px;
+  }
+  .foodPrice {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: italic;
+  }
+  .foodAllergies {
+    font-family: "Open Sans";
+    font-size: 15px;
+  }
+  .foodButton {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: bitter;
+    font-size: 1.5vw;
+  }
+  .foodConfirm {
+    font-family: oswald;
+  margin: 20px;
+  padding-left: 30px;
+  font-size: 1.5vw;
+  }
+  button {
+    cursor: pointer;
+  }
+  .beigebg, hr {
+    background-color: rgb(248, 248, 233);
+  }
+  .howMany {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+    font-family: verdana;
+    font-size: 24px;
+    width: 4vw;
+    text-align: center;
+  }
+  .btnIncDec {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: bitter;
+    font-size: 1.5vw;
+  }
