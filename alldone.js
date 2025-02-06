@@ -1,0 +1,2 @@
+document.getElementById("addressLoc").innerHTML = "Your order will be delivered to " + localStorage.getItem("address") + ", " + localStorage.getItem("town") + ", " + localStorage.getItem("zip") + " within 25 minutes.";
+localStorage.clear();

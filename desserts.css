@@ -1,0 +1,40 @@
+.app {
+    font-family: oswald;
+    text-align: center;
+  }
+  .image-dims {
+    margin: 50px;
+    width: 30%;
+    height: 23vw;
+  }
+  .apfelkuchenDiv {
+    display: none;
+  }
+  .malabiDiv {
+    display: none;
+  }
+  .treslechesDiv {
+    display: none;
+  }
+  .kulfiDiv {
+    display: none;
+  }
+  .flanDiv {
+    display: none;
+  }
+  .sesameDiv {
+    display: none;
+  }
+  .allergens {
+    font-family: "open sans"; 
+    margin: 20px;
+    padding-left: 30px;
+  }
+  .contact-info {
+    display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

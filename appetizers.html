@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <link rel="stylesheet" href="appetizers.css">
+    <link rel="stylesheet" href="headerAccess.css" />
+    <link rel="stylesheet" href="hoveringMechanics.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="costHeader pointer" id="header"><label class="pointer"><i class="fa fa-shopping-cart" id="cartCheckout" onclick="goToCheckoutNow()"></i>&nbsp;Total: $</label><label id="costLabel" class="pointer"></label></div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"> </ul>
+    </div>
+
+    <div class="costHeaderMenu pointer" id="headerMenu"><a href="aboutus.html"><img src="impeckablelogo.png" class="logo-style"></a>&nbsp;&nbsp;<label class="pointer">Menu</label><label id="costLabelMenu" class="pointer"></label></div>
+    <div class="dropdownMenu" id="dropDivMenu">
+      <ul id="dropListMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <img src="appmenumain.png" width="100%" class="override"><br>
+    
+    <h1 class="app">APPETIZERS</h1>
+    <hr>
+    <div class="confirm beigebg">
+    <div class="cardOrder" onclick="openFalafel()">
+    <img src="fandhapps.jpg" class="image-dims">
+    <div>
+      <h1 class="foodHeading">FALAFEL AND HUMMUS</h1>
+      <p class="foodDescription">Crispy, golden-brown balls made with chickpeas and garlic with a dip made with chickpeas</p><br>
+      <p class="foodPrice">$8.99, 12 pc</p><br><br>
+      <p class="foodAllergies">Contains: gluten, sesame, chickpeas</p>
+    </div>
+    </div><br>
+    <div class="falafelDiv" id="falafelDisplay">
+    <label id="falafelAndHummusConfirm" class="foodConfirm">Confirm Purchase of Falafel and Hummus for $8.99?</label>
+
+    <button class="btnIncDec" onclick="decrementFalafel()">-</button>
+    <input id="quantityFalafel" class="howMany" readonly value="1">
+    <button class="btnIncDec" onclick="incrementFalafel()">+</button> 
+
+    <button id="fAndHYes" class="foodButton" onclick="falafel()">Yes</button>
+    <button id="fAndHNo" class="foodButton" onclick="closeFalafel()">No</button>
+    </div></div>
+    <hr>
+    <div class="confirm">
+    <div class="cardOrder" onclick="openSamosas()">
+      <img src="samapps.jpg" class="image-dims">
+      <div>
+        <h1 class="foodHeading">SAMOSAS</h1>
+        <p class="foodDescription">Crispy pastries with a filling made of a spicy mixture of potatoes, peas, and herbs</p><br>
+        <p class="foodPrice">$7.99, 6 pc</p><br><br>
+        <p class="foodAllergies">Contains: gluten, potato</p>
+      </div>
+      </div><br>
+      <div class="samosasDiv" id="samosasDisplay">
+        <label id="samosasConfirm" class="foodConfirm">Confirm Purchase of Samosas for $7.99?</label>
+
+
+        <button class="btnIncDec" onclick="decrementSamosas()">-</button>
+        <input id="quantitySamosas" class="howMany" readonly value="1">
+        <button class="btnIncDec" onclick="incrementSamosas()">+</button> 
+
+        <button id="samosasYes" class="foodButton" onclick="samosas()">Yes</button>
+        <button id="samosasNo"class="foodButton" onclick="closeSamosas()">No</button>
+        </div></div>
+
+      <hr>
+      <div class="confirm beigebg">
+      <div class="cardOrder" onclick="openBruschetta()">
+        <img src="brusapps.jpg" class="image-dims">
+        <div>
+          <h1 class="foodHeading">BRUSCHETTA</h1>
+          <p class="foodDescription">Toasted baguette with light and refreshing tomato, garlic, and balsamic glaze</p><br>
+          <p class="foodPrice">$5.99, 12 pc</p><br><br>
+          <p class="foodAllergies">Contains: gluten</p>
+        </div>
+        </div><br>
+        <div class="bruschettaDiv" id="bruschettaDisplay">
+          <label id="bruschettaConfirm" class="foodConfirm">Confirm Purchase of bruschetta for $5.99?</label>
+
+          <button class="btnIncDec" onclick="decrementBruschetta()">-</button>
+          <input id="quantityBruschetta" class="howMany" readonly value="1">
+          <button class="btnIncDec" onclick="incrementBruschetta()">+</button> 
+
+          <button id="bruschettaYes" class="foodButton" onclick="bruschetta()">Yes</button>
+          <button id="bruschettaYes" class="foodButton" onclick="closeBruschetta()">No</button>
+          </div></div>
+        <hr>
+        <div class="confirm">
+        <div class="cardOrder" onclick="openTortilla()">
+          <img src="torapps.jpg" class="image-dims">
+          <div>
+            <h1 class="foodHeading">TORTILLA CHIPS</h1>
+            <p class="foodDescription">Crispy chips with delectable spicy tomato salsa</p><br>
+            <p class="foodPrice">$6.99</p><br><br>
+            <p class="foodAllergies">Contains: wheat, gluten</p>
+          </div>
+          </div><br>
+          <div class="tortillaDiv" id="tortillaDisplay">
+            <label id="tortillaConfirm" class="foodConfirm">Confirm Purchase of tortilla chips and salsa for $6.99?</label>
+
+            <button class="btnIncDec" onclick="decrementTortilla()">-</button>
+            <input id="quantityTortilla" class="howMany" readonly value="1">
+            <button class="btnIncDec" onclick="incrementTortilla()">+</button> 
+
+            <button id="tortillaYes" class="foodButton" onclick="tortilla()">Yes</button>
+            <button id="tortillaYes" class="foodButton" onclick="closeTortilla()">No</button>
+            </div></div>
+          <hr>
+
+          <p class="allergens">Please ask attendants or call for more allergen information.</p><br>
+          <hr>
+          <div
+        class="contact-info"
+      >
+        <label><a href="https://mail.google.com/mail/?view=cm&to=impeckableatlanta@gmail.com&su=Support%20Request&body=Welcome%20to%20our%20restaurant!%0A%0APlease%20let%20us%20know%20what%20issues%20you%20are%20facing." target="_blank">impeckableatlanta@gmail.com</a></label
+        ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+        ><label>|</label><label>+1 (678) 843-1535</label>
+      </div>
+      <script src="sketch.js"></script>
+  </body>
+</html>

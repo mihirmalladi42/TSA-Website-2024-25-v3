@@ -1,0 +1,86 @@
+#listDisplay {
+  font-size: 16px;
+  font-family: "Open Sans";
+  margin-left: 50px;
+}
+#listDisplay li {
+  margin-bottom: 10px;
+}
+#listDisplay li button {
+  margin-left: 0 !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  font-family: century-gothic;
+}
+.labelContact {
+  font-family: century-gothic;
+  margin-left: 50px;
+}
+.sectionHeading {
+  font-family: oswald;
+  font-size: 50px;
+  margin-left: 50px;
+}
+.contactContainer {
+  display: flex;
+  font-size: 16px;
+  margin-left: 50px;
+}
+.margin-right {
+  margin-right: 15%;
+}
+#divFlex {
+  display: flex !important;
+}
+.btnCardInfo {
+  margin-left: 100px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-bottom: 0.75vw;
+  padding-top: 0.75vw;
+  font-size: 1vw;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+input {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.no-right {
+  display: flex;
+  margin-left: 0;
+  text-align: left !important;
+  display: flex;
+            justify-content: space-between;
+            margin-right: 80%;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+}
+.align-left {
+  display: flex;
+  margin-left: 100px;
+  text-align: right !important;
+  background: none;
+  color: red;
+  cursor: pointer;
+  border: 2px solid rgb(189, 189, 189);
+  transition: color 0.2s, background-color 0.2s, transform 0.2s ease;
+}
+.align-left:hover {
+  transform: scale(1.05);
+  color: rgb(207, 0, 0);
+  background-color: rgb(234, 234, 234);
+}
+.errorLabel {
+  display: none;
+  color: red;
+  font-size: 1.5vw;
+  margin-left: 50px;
+  font-family: oswald;
+}

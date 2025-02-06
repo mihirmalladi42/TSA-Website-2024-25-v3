@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Oswald"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open Sans"
+          rel="stylesheet"
+        />
+        <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+        <link rel="stylesheet" href="entrees.css">
+        <link rel="stylesheet" href="headerAccess.css" />
+        <link rel="stylesheet" href="hoveringMechanics.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
+
+
+      <body>
+        <div class="costHeader pointer" id="header"><label class="pointer"><i class="fa fa-shopping-cart" id="cartCheckout" onclick="goToCheckoutNow()"></i>&nbsp;Total: $</label><label id="costLabel" class="pointer"></label></div>
+    <div class="dropdown" id="dropDiv">
+      <ul id="dropList"> </ul>
+    </div>
+
+    <div class="costHeaderMenu pointer" id="headerMenu"><a href="aboutus.html"><img src="impeckablelogo.png" class="logo-style"></a>&nbsp;&nbsp;<label class="pointer">Menu</label><label id="costLabelMenu" class="pointer"></label></div>
+    <div class="dropdownMenu" id="dropDivMenu">
+      <ul id="dropListMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+        <img src="appmenumain.png" width="100%" class="override"><br>
+        
+        <h1 class="app">ENTREES</h1>
+        <hr>
+        <div class="confirm beigebg">
+        <div class="cardOrder" onclick="openKoshary()">
+        <img src="koshary.jpg" class="image-dims">
+        <div>
+          <h1 class="foodHeading">KOSHARY</h1>
+          <p class="foodDescription">A hearty dish made with rice, lentils, macaroni, chickpeas, and topped with fried onions and a spicy tomato sauce 
+          </p><br>
+          <p class="foodPrice">$20.99, 2 lbs / 0.9 kg
+          </p><br><br>
+          <p class="foodAllergies">Contains: gluten, legumes
+          </p>
+        </div>
+        </div><br>
+        <div class="kosharyDiv" id="kosharyDisplay">
+        <label id="kosharyConfirm" class="foodConfirm">Confirm Purchase of Koshary for $20.99? (You can cancel at checkout screen)</label>
+
+        <button class="btnIncDec" onclick="decrementKoshary()">-</button>
+            <input id="quantityKoshary" class="howMany" readonly value="1">
+            <button class="btnIncDec" onclick="incrementKoshary()">+</button> 
+
+        <button id="kosharyYes" class="foodButton" onclick="koshary()">Yes</button>
+        <button id="kosharyNo" class="foodButton" onclick="closeKoshary()">No</button>
+        </div></div>
+        <hr>
+        <div class="confirm">
+        <div class="cardOrder" onclick="openRatatouille()">
+          <img src="ratatouille.jpg" class="image-dims">
+          <div>
+            <h1 class="foodHeading">RATATOUILLE</h1>
+            <p class="foodDescription">A comfy, flavor-filled, vegetable stew made with eggplant, zucchini, bell peppers, and tomatoes, seasoned with herbs and simmered to blend the flavors
+            </p><br>
+            <p class="foodPrice">$16.99</p><br><br>
+            <p class="foodAllergies">Contains: garlic, herbs</p>
+          </div>
+          </div><br>
+          <div class="ratatouilleDiv" id="ratatouilleDisplay">
+            <label id="ratatouilleConfirm" class="foodConfirm">Confirm Purchase of Ratatouille for $16.99? (You can cancel at checkout screen)</label>
+            
+            <button class="btnIncDec" onclick="decrementRatatouille()">-</button>
+            <input id="quantityRatatouille" class="howMany" readonly value="1">
+            <button class="btnIncDec" onclick="incrementRatatouille()">+</button> 
+            
+            <button id="ratatouilleYes" class="foodButton" onclick="ratatouille()">Yes</button>
+            <button id="ratatouilleNo" class="foodButton" onclick="closeRatatouille()">No</button>
+            </div></div>
+    
+          <hr>
+          <div class="confirm beigebg">
+          <div class="cardOrder" onclick="openJapchae()">
+            <img src="japchae.jpg" class="image-dims">
+            <div>
+              <h1 class="foodHeading">JAPCHAE</h1>
+              <p class="foodDescription">Stir-fried sweet potato noodles with vegetables like spinach, carrots, and mushrooms, seasoned with soy sauce and sesame oil
+              </p><br>
+              <p class="foodPrice">$15.99</p><br><br>
+              <p class="foodAllergies">Contains: garlic, herbs</p>
+            </div>
+            </div><br>
+            <div class="japchaeDiv" id="japchaeDisplay">
+              <label id="japchaeConfirm" class="foodConfirm">Confirm Purchase of Japchae for $15.99? (You can cancel at checkout screen)</label>
+              
+              <button class="btnIncDec" onclick="decrementJapchae()">-</button>
+            <input id="quantityJapchae" class="howMany" readonly value="1">
+            <button class="btnIncDec" onclick="incrementJapchae()">+</button> 
+              
+              <button id="japchaeYes" class="foodButton" onclick="japchae()">Yes</button>
+              <button id="japchaeYes" class="foodButton" onclick="closeJapchae()">No</button>
+              </div></div>
+            <hr>
+            <div class="confirm">
+            <div class="cardOrder" onclick="openChole()">
+              <img src="chole.JPG" class="image-dims">
+              <div>
+                <h1 class="foodHeading">CHOLE BHATURE</h1>
+                <p class="foodDescription">A hearty chickpea curry cooked in a spicy, tangy tomato and onion gravy, flavored with a blend of traditional Indian spices, served with golden, fluffy, deep-fried bread made from a fermented dough
+                </p><br>
+                <p class="foodPrice">$20.99, Chef's Specialty</p><br><br>
+                <p class="foodAllergies">Contains: gluten, legumes, chickpeas</p>
+              </div>
+              </div><br>
+              <div class="choleDiv" id="choleDisplay">
+                <label id="choleConfirm" class="foodConfirm">Confirm Purchase of Chole Bhature for $20.99? (You can cancel at checkout screen)</label>
+                
+                <button class="btnIncDec" onclick="decrementChole()">-</button>
+              <input id="quantityChole" class="howMany" readonly value="1">
+              <button class="btnIncDec" onclick="incrementChole()">+</button> 
+                
+                <button id="choleYes" class="foodButton" onclick="chole()">Yes</button>
+                <button id="choleYes" class="foodButton" onclick="closeChole()">No</button>
+                </div></div>
+              <hr>
+
+              <div class="confirm beigebg">
+              <div class="cardOrder" onclick="openThaiRed()">
+                <img src="thaired.jpg" class="image-dims">
+                <div>
+                  <h1 class="foodHeading">THAI RED CURRY</h1>
+                  <p class="foodDescription">A flavorful curry made with coconut milk, red curry paste, and vegetables like kabocha squash and eggplant
+
+                  </p><br>
+                  <p class="foodPrice">$20.99</p><br><br>
+                  <p class="foodAllergies">Contains: gluten, legumes, dairy</p>
+                </div>
+                </div><br>
+                <div class="thairedDiv" id="thairedDisplay">
+                  <label id="thairedConfirm" class="foodConfirm">Confirm Purchase of Thai Red Curry for $20.99? (You can cancel at checkout screen)</label>
+                  
+                  <button class="btnIncDec" onclick="decrementThaiRed()">-</button>
+                <input id="quantityThaiRed" class="howMany" readonly value="1">
+                <button class="btnIncDec" onclick="incrementThaiRed()">+</button> 
+                  
+                  <button id="thairedYes" class="foodButton" onclick="thaiRed()">Yes</button>
+                  <button id="thairedYes" class="foodButton" onclick="closeThaiRed()">No</button>
+                  </div></div>
+                <hr>
+                <div class="confirm">
+                <div class="cardOrder" onclick="openChiles()">
+                  <img src="chiles.jpg" class="image-dims">
+                  <div>
+                    <h1 class="foodHeading">CHILES RELLENOS</h1>
+                    <p class="foodDescription">Juicy poblano peppers stuffed with cheese, coated in an egg batter, and fried until crispy
+
+                    </p><br>
+                    <p class="foodPrice">$19.99</p><br><br>
+                    <p class="foodAllergies">Contains: dairy, eggs, gluten, nightshades</p>
+                  </div>
+                  </div><br>
+                  <div class="chilesDiv" id="chilesDisplay">
+                    <label id="chilesConfirm" class="foodConfirm">Confirm Purchase of Chiles Rellenos for $19.99? (You can cancel at checkout screen)</label>
+                    
+                    <button class="btnIncDec" onclick="decrementChiles()">-</button>
+                    <input id="quantityChiles" class="howMany" readonly value="1">
+                    <button class="btnIncDec" onclick="incrementChiles()">+</button> 
+                    
+                    <button id="chilesYes" class="foodButton" onclick="chiles()">Yes</button>
+                    <button id="chilesYes" class="foodButton" onclick="closeChiles()">No</button>
+                    </div></div>
+                  <hr>
+                  <div class="confirm beigebg">
+                  <div class="cardOrder" onclick="openArepas()">
+                    <img src="arepas.png" class="image-dims">
+                    <div>
+                      <h1 class="foodHeading">AREPAS</h1>
+                      <p class="foodDescription">Fluffy corn cakes stuffed with various fillings like cheese, avocado, or beans
+
+                      </p><br>
+                      <p class="foodPrice">$16.99</p><br><br>
+                      <p class="foodAllergies">Contains: corn, dairy, herbs</p>
+                    </div>
+                    </div><br>
+                    <div class="arepasDiv" id="arepasDisplay">
+                      <label id="arepasConfirm" class="foodConfirm">Confirm Purchase of Arepas for $16.99? (You can cancel at checkout screen)</label>
+                      
+                      <button class="btnIncDec" onclick="decrementArepas()">-</button>
+                    <input id="quantityArepas" class="howMany" readonly value="1">
+                    <button class="btnIncDec" onclick="incrementArepas()">+</button> 
+                      
+                      <button id="arepasYes" class="foodButton" onclick="arepas()">Yes</button>
+                      <button id="arepasYes" class="foodButton" onclick="closeArepas()">No</button>
+                      </div></div>
+                    <hr>
+                    <div class="confirm">
+                    <div class="cardOrder" onclick="openBuddhas()">
+                      <img src="buddhas.jpg" class="image-dims">
+                      <div>
+                        <h1 class="foodHeading">BUDDHA'S DELIGHT</h1>
+                        <p class="foodDescription">Various vegetables, tofu, and sometimes mushrooms stir-fried with savory sauces
+
+                        </p><br>
+                        <p class="foodPrice">$20.99</p><br><br>
+                        <p class="foodAllergies">Contains: soy, gluten, sesame, nuts</p>
+                      </div>
+                      </div><br>
+                      <div class="buddhasDiv" id="buddhasDisplay">
+                        <label id="buddhasConfirm" class="foodConfirm">Confirm Purchase of Buddha's Delight for $20.99? (You can cancel at checkout screen)</label>
+                        
+                        <button class="btnIncDec" onclick="decrementBuddhas()">-</button>
+                    <input id="quantityBuddhas" class="howMany" readonly value="1">
+                    <button class="btnIncDec" onclick="incrementBuddhas()">+</button> 
+                        
+                        <button id="buddhasYes" class="foodButton" onclick="buddhas()">Yes</button>
+                        <button id="buddhasYes" class="foodButton" onclick="closeBuddhas()">No</button>
+                        </div></div>
+                      <hr>
+
+    
+              <p class="allergens">Please ask attendants or call for more allergen information.</p><br>
+              <hr>
+              <div
+        class="contact-info"
+      >
+        <label><a href="https://mail.google.com/mail/?view=cm&to=impeckableatlanta@gmail.com&su=Support%20Request&body=Welcome%20to%20our%20restaurant!%0A%0APlease%20let%20us%20know%20what%20issues%20you%20are%20facing." target="_blank">impeckableatlanta@gmail.com</a></label
+        ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+        ><label>|</label><label>+1 (678) 843-1535</label>
+      </div>
+          <script src="sketch.js"></script>
+      </body>
+</html>

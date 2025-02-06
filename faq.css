@@ -1,0 +1,75 @@
+.jumptaq {
+    font-family: oswald;
+    margin-left: 50px;
+    text-align: left;
+}
+.ulQuestions {
+    font-family: century-gothic;
+    margin-left: 50px;
+    list-style: circle;
+    font-size: 24px;
+}
+.v {
+    color: #f34f4c;
+}
+.imp {
+    color: #30d5c8;
+}
+.container {
+    text-align: center;
+}
+.sections {
+    /*font-family: oswald;
+    font-size: 40px;
+    text-align: center;*/
+    font-family: oswald;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Keeps image and text aligned */
+    justify-content: center; /* Centers everything */
+    gap: 20px; /* Adds space between image and text */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.blackText {
+    font-size: 20px;
+    font-family: century-gothic;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2vw;
+    font-family: verdana !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.body-bg {
+    background-color: #f8f4ec;
+}
+.imgDiv {
+    width: 25%;
+}
+
+.imgDiv img {
+    width: 100%; /* Makes sure the image fits inside the container */
+    height: auto;
+}
+
+.textC {
+    width: 60%; /* Adjusts text width so it stays balanced */
+}
+.nostyle {
+    all: unset;
+    display: block;
+}
+.oswald {
+    font-family: oswald;
+    font-size: 40px;
+}
+.bar {
+    width: 100%;
+    height: 50px;
+    background-color:#f34f4c;
+}

@@ -1,0 +1,43 @@
+.heading {
+    font-family: oswald;
+    font-size: 7vw;
+    background-color: #d84444;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  .left-img {
+    float: left;
+    width: 25%;
+  }
+  .card-title {
+  color: #f34f4c;
+    font-size: 40px!important;
+    font-family: oswald;
+  }
+  .card-text {
+    font-family: century-gothic;
+    font-size: 16px;
+  }
+  .align-center {
+    text-align: center;
+  }

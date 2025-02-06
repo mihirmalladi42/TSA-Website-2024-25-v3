@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Oswald"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open Sans"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+        <link rel="stylesheet" href="checkout.css" />
+        <link rel="stylesheet" href="headerAccess.css" />
+        <meta charset="utf-8" />
+      </head>
+
+    <body>
+
+      <div class="costHeaderMenu pointer" id="headerMenu"><a href="aboutus.html"><img src="impeckablelogo.png" class="logo-style"></a>&nbsp;&nbsp;<label class="pointer">Menu</label><label id="costLabelMenu" class="pointer"></label></div>
+    <div class="dropdownMenu" id="dropDivMenu">
+      <ul id="dropListMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appetizers.html">Appetizers</a></li>
+        <li><a href="entrees.html">Entrees</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="referencepage.html">Reference Page</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+        <img src="checkoutheading.png" width="100%" class="override"/>
+        
+
+<!--
+<h1 class="heading">Contact Information</h1>
+        <hr>
+        <br>
+        <div class="container">
+        <div class="margin-right">
+        <label class="labelContact labelHere">Email address: </label> <br>
+        <label class="labelContact labelHere">Phone: </label> <br>
+        <label class="labelContact labelHere">Name </label>
+        </div><div>
+        <input type="text" id="emailBox" class="labelContact"placeholder="Enter e-mail here"><br>
+        <input type="text" id="countryCodeBox" class="labelContact"placeholder="Enter country code"><input type="text"  id="phoneBox" class="labelContact"placeholder="Enter number"><br>
+        <input type="text" id="nameBox" class="labelContact"placeholder="Enter name"><br>
+        
+        </div>
+        </div>
+
+
+-->
+<h1 class="sectionHeading">Order</h1>
+        
+        <ul id="listDisplay" class="ulClass"></ul>
+        <hr>
+<h1 class="sectionHeading">Contact Information</h1>
+<hr>
+<div class="contactContainer">
+  <div class="margin-right">
+<label class="labelContact">Email address: </label> <br><br>
+<label class="labelContact">Phone: </label> <br><br>
+<label class="labelContact">Name: </label><br><br>
+</div><div>
+<input type="text" id="emailBox" class="labelContact"placeholder="Enter e-mail here"><br><br> 
+<input type="text" id="countryCodeBox" class="labelContact"placeholder="Enter country code"><input type="text"  id="phoneBox" class="labelContact"placeholder="Enter number"><br><br>
+<input type="text" id="nameBox" class="labelContact"placeholder="Enter name"><br><br>
+
+</div>
+</div>
+
+<hr>
+
+<h1 class="sectionHeading">Billing and Shipping</h1>
+
+<div class="contactContainer">
+  <div class="margin-right">
+<label class="labelContact">Address: </label> <br><br>
+<label class="labelContact">Town/City: </label> <br><br>
+<label class="labelContact">Zip Code: </label><br><br>
+</div><div>
+<input type="text" id="addressBox" class="labelContact"placeholder="Enter address here"><br><br> 
+<input type="text" id="townBox" class="labelContact"placeholder="Enter town/city"><br><br>
+<input type="text" id="zipBox" class="labelContact"placeholder="Enter zip code"><br><br>
+
+</div>
+</div>
+<hr>
+<h1 class="sectionHeading">Additional Information</h1>
+
+<div class="contactContainer">
+  <div class="margin-right">
+<label class="labelContact">Enter what you want the driver to know: </label> <br><br>
+</div><div>
+<input type="text" id="extraBox" class="labelContact"placeholder="Ex: I want Diet Coke, Sriracha, etc."><br><br> 
+
+</div>
+</div>
+<!--
+
+
+  <h1 class="heading">Additional Information</h1>
+        <hr>
+                <div class="container">
+                <div class="margin-right">
+                <label class="labelContact labelHere">Enter what you want the driver to know: </label> <br>
+                </div><div>
+                <input type="text" id="extraBox" class="labelContact"placeholder="Ex: I want Diet Coke, Sriracha, etc."><br>
+                
+                </div>
+                </div>
+<hr>
+-->
+
+        <hr>
+        <h1 class="sectionHeading">Payment</h1>
+        
+        <div class="contactContainer">
+          <div class="margin-right">
+      <label class="labelContact">Card Number: </label> <br><br>
+      <label class="labelContact">Expiration Date: </label> <br><br>
+      <label class="labelContact">Security Code: </label><br><br>
+      <label class="labelContact">Cardholder's Name: </label>
+      </div><div>
+      <input type="text" id="cardNumberBox" class="labelContact"placeholder="Ex: 1234 5678 1357 2468"><br><br>
+      <input type="text" id="expirationDateBox" class="labelContact"placeholder="Ex: 09/28"><br><br>
+      <input type="text" id="securityCodeBox" class="labelContact"placeholder="Ex: 013"><br><br>
+      <input type="text" id="cardholderNameBox" class="labelContact"placeholder="Ex: Steven Williams"><br>
+      
+      </div>
+      </div>
+      <button class="btnCardInfo" class="labelContact" onclick="updateCard()">Enter</button>
+      <label id="error" class="errorLabel">Error: One or more input is not filled.</label>
+      <br>
+      <hr>
+      <h1 class="sectionHeading">Summary</h1>
+      
+      </div>
+
+      <div class="contactContainer">
+        <div class="margin-right">
+    <label class="labelContact">Subtotal: </label> <br><br>
+    <label class="labelContact">Shipping: </label> <br><br>
+    <label class="labelContact">Tax: </label><br><br>
+    <label class="labelContact">Total: </label>
+    </div><div>
+    <input type="text" id="subtotal" class="labelContact" readonly placeholder="Ex. $29.98"><br><br>
+    <input type="text" id="shipping" class="labelContact" readonly placeholder="Ex. $3.99 "><br><br>
+    <input type="text" id="tax" class="labelContact" readonly placeholder="Ex: 013"><br><br>
+    <input type="text" id="total" class="labelContact" readonly placeholder="Ex: Steven Williams"><br>
+    
+    </div>
+    </div>
+
+    <button class="btnCardInfo" onclick="allDonePage()">Finish</button><br>
+    <label id="error2" class="errorLabel">Error: One or more input is not filled.</label><br>
+    <hr>
+    <div
+        class="contact-info"
+      >
+        <label><a href="https://mail.google.com/mail/?view=cm&to=impeckableatlanta@gmail.com&su=Support%20Request&body=Welcome%20to%20our%20restaurant!%0A%0APlease%20let%20us%20know%20what%20issues%20you%20are%20facing." target="_blank">impeckableatlanta@gmail.com</a></label
+        ><label>|</label><label>675 Peachmont Avenue, Alpharetta, GA</label
+        ><label>|</label><label>+1 (678) 843-1535</label>
+      </div>
+        <script src="checkout.js"></script>
+        <script src="checkouts.js"></script>
+    </body>
+</html>

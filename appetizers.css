@@ -1,0 +1,35 @@
+.app {
+  font-family: oswald;
+  text-align: center;
+}
+.image-dims {
+  margin: 50px;
+  width: 30%;
+  height: 23vw;
+}
+.falafelDiv {
+  display: none;
+}
+.samosasDiv {
+  display: none;
+}
+.bruschettaDiv {
+  display: none;
+}
+.tortillaDiv {
+  display: none;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-family: verdana !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.allergens {
+  font-family: "open sans"; 
+  margin: 20px;
+  padding-left: 30px;
+}
